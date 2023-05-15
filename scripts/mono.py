@@ -1,5 +1,5 @@
 import os
-import glob
+
 from pydub import AudioSegment
 
 
@@ -21,5 +21,5 @@ def process_directory(root_dir):
                 print("Converted to mono and saved to:", output_file)
 
 
-root_dir = "../data"
+root_dir = "../sentences_dataset"
 process_directory(root_dir)

@@ -1,17 +1,11 @@
-import json
 import os
-import random
-import shutil
 
-import librosa
 import pandas as pd
-from tqdm import tqdm
 
 sample_rate = 16000
-data_dir = 'dataset/'
+data_dir = 'words_dataset/'
 audio_extension = '.wav'
 
-# get a list of all the audio files and their labels
 audio_files = []
 for root, dirs, files in os.walk(data_dir):
     for filename in files:

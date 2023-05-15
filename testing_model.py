@@ -1,15 +1,14 @@
 import csv
 
-import torch
 import evaluate
 import nemo.collections.asr as nemo_asr
 
 # Config
 batch_size = 16
 device = 'cuda'  # or cpu
-testset_file = 'transcription_S.csv'
+testset_file = 'transcription.csv'
 
-# Load the test dataset
+# Load the test words_dataset
 with open(testset_file, encoding='utf-8') as f:
     samples = list(csv.DictReader(f))
 

@@ -29,7 +29,7 @@ def normalize_audio_volume(audio_file, target_volume):
     return audio + volume_diff
 
 
-audio_files = get_audio_files("dataset")
+audio_files = get_audio_files("words_dataset")
 average_volume = get_average_volume(audio_files)
 
 for file in audio_files:
